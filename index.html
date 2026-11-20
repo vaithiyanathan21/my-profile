@@ -1,1 +1,140 @@
 
+<!DOCTYPE html>
+<html lang="en" data-mood="calm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vaithiyanathan S – Python & Full-Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f5f8; --ink:#142036; --muted:#4b5870; --line:#cfd6e2; --card:#ffffff;
+  --accent:#2f6fed;
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1624;--ink:#e8edf6;--muted:#a3afc4;--line:#2a3550;--card:#162033;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1624;--ink:#e8edf6;--muted:#a3afc4;--line:#2a3550;--card:#162033;color-scheme:dark}
+html[data-mood="calm"]{--accent:#2f6fed}
+html[data-mood="happy"]{--accent:#f0a500}
+html[data-mood="focus"]{--accent:#1f9d6b}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 var(--body)}
+h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+header.hero{background:color-mix(in srgb,var(--accent) 20%,var(--bg));border-bottom:1px solid var(--line);transition:background .5s}
+.hero .wrap{padding-top:4rem;padding-bottom:4rem}
+.hero h1{font-weight:800;font-size:clamp(2.8rem,9vw,6.5rem);letter-spacing:-.03em;max-width:12ch}
+.hero p.role{font-family:var(--display);font-weight:500;font-size:clamp(1.15rem,2.6vw,1.6rem);margin:1.25rem 0 0;max-width:34ch}
+.mood{margin-top:2.25rem;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;font-family:var(--display)}
+.mood span{color:var(--muted);margin-right:.25rem}
+.mood button{font:500 1rem var(--display);padding:.55rem 1.1rem;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.mood button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#0b1220}
+section{padding:3.5rem 0;border-bottom:1px solid var(--line)}
+h2{font-weight:800;font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:1.5rem;letter-spacing:-.02em}
+.about p{max-width:38rem;margin:0 0 1rem}
+.projects{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+.proj{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--accent);border-radius:6px;padding:1.4rem;transition:border-color .5s}
+.proj h3{font-size:1.35rem;margin-bottom:.6rem}
+.proj p{margin:0 0 1rem;font-size:1.02rem;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;padding:0;margin:0;list-style:none}
+.tags li{font:500 .85rem var(--display);border:1px solid var(--line);border-radius:4px;padding:.15rem .55rem}
+.skills{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
+.skills h3{font-size:1.1rem;margin-bottom:.6rem}
+.edu{display:grid;gap:1.25rem}
+.edu div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.25rem 1rem;max-width:42rem}
+.edu strong{font-family:var(--display)}
+.edu small{color:var(--muted);font-size:1rem}
+.contact a{display:inline-block;margin:.25rem 1.25rem .25rem 0;font-family:var(--display);font-weight:500;text-decoration-thickness:3px;text-decoration-color:var(--accent);text-underline-offset:5px}
+footer{padding:2rem 0;color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h2>VAITHIYANATHAN   <space>s</space></h2>
+    <p class="role">Python and full-stack developer. I build web apps and add computer vision where it helps.</p>
+    <div class="mood" role="group" aria-label="Page colour">
+      <span>Pick a mood:</span>
+      <button type="button" data-m="calm" aria-pressed="true">Calm</button>
+      <button type="button" data-m="happy" aria-pressed="false">Happy</button>
+      <button type="button" data-m="focus" aria-pressed="false">Focus</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="about"><div class="wrap">
+  <h2>About</h2>
+  <p>I’m a Computer Science postgraduate who enjoys turning ideas into working software, from Django back ends and React front ends to models that read faces and play the right song.</p>
+  <p>I’m looking for my first role as a Python or frontend developer, where I can keep shipping and learning with a team.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Projects</h2>
+  <div class="projects">
+    <article class="proj">
+      <h3>Emotion-Based AI Music Player</h3>
+      <p>Detects the listener’s facial emotion through the camera and plays music that matches the mood.</p>
+      <ul class="tags"><li>Python</li><li>OpenCV</li><li>TensorFlow</li></ul>
+    </article>
+    <article class="proj">
+      <h3>Full-Stack Quiz Application</h3>
+      <p>A web app where users take quizzes and see their results, with a complete front end and back end.</p>
+      <ul class="tags"><li>Django</li><li>React.js</li><li>SQLite</li></ul>
+    </article>
+    
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Languages</h3><ul class="tags"><li>Python</li><li>JavaScript</li></ul></div>
+    <div><h3>Web</h3><ul class="tags"><li>Django</li><li>React.js</li><li>HTML</li><li>CSS</li><li>SQLite</li></ul></div>
+    <div><h3>AI and tools</h3><ul class="tags"><li>OpenCV</li><li>TensorFlow</li><li>Git</li></ul></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Education</h2>
+  <div class="edu">
+    <div><span><strong>MSc Computer Science</strong><br>Jamal Mohammed College, Trichy</span><small>2023–2025</small></div>
+    <div><span><strong>BSc Computer Science</strong><br>National College, Trichy</span><small>2020–2023</small></div>
+  </div>
+</div></section>
+
+<section class="contact" style="border-bottom:0"><div class="wrap">
+  <h2>Get in touch</h2>
+ <a href="https://mail.google.com/mail/?view=cm&to=svaithiyanthan49@gmail.com" target="_blank">
+  Gmail
+ </a>
+  <a>phone no:9940975576</a>
+  <a href="https://github.com/vaithiyanathan21">GitHub</a>
+  <a href="https://www.linkedin.com/in/vaithiyanathan-s-5a56aa2b6">LinkedIn</a>
+  <a href=" https://drive.google.com/file/d/1vRZuC0FCk8yXWwkesw3XDQt3QTh_-I3a/view?usp=drive_link">Download resume</a>
+ 
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Vaithiyanathan S</div></footer>
+
+<script>
+(function(){
+  var btns=document.querySelectorAll('.mood button');
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      document.documentElement.setAttribute('data-mood',b.dataset.m);
+      btns.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    });
+  });
+})();
+</script>
+</body>
+</html>
